@@ -19,12 +19,10 @@ python3 -m http.server 8000
 e acessar `http://localhost:8000`.
 
 ## Deploy na Vercel (sem complicação — é 100% estático)
-1. Crie um repositório novo no GitHub (ex: `portfolio-sakata`) e suba estes arquivos
-   (`index.html`, `README.md` e a pasta `assets/`) na raiz do repositório.
-2. Na Vercel: **Add New → Project → Import** esse repositório.
-3. Não precisa mexer em nada nas configurações — sem Root Directory, sem Build Command,
-   sem Output Directory. A Vercel detecta como projeto estático automaticamente.
-4. Clique em **Deploy**.
+Produção: **https://portfolio-sakata.vercel.app**
+
+O projeto `portfolio-sakata` está conectado ao repositório `DiegoLopesSakata/portfolio` —
+todo push na branch `main` gera automaticamente um novo deploy em produção.
 
 ## O que personalizar depois
 - Cores em `assets/css/style.css`, na seção `:root` (variáveis `--accent`, `--bg`, etc.).
