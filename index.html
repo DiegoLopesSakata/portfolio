@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diego Sakata — Desenvolvedor Backend Júnior</title>
+<meta name="description" content="Portfólio de Diego Sakata, desenvolvedor backend júnior com foco em Java, Spring Boot e bancos de dados relacionais.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- overlay de transição em onda -->
+<div id="wave-overlay" aria-hidden="true">
+  <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+    <path class="wave-3" d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,208C672,213,768,203,864,192C960,181,1056,171,1152,181.3C1248,192,1344,224,1392,240L1440,256L1440,320L0,320Z"></path>
+    <path class="wave-2" d="M0,160L48,176C96,192,192,224,288,213.3C384,203,480,149,576,144C672,139,768,181,864,197.3C960,213,1056,203,1152,181.3C1248,160,1344,128,1392,112L1440,96L1440,320L0,320Z"></path>
+    <path class="wave-1" d="M0,96L48,101.3C96,107,192,117,288,138.7C384,160,480,192,576,197.3C672,203,768,181,864,165.3C960,149,1056,139,1152,149.3C1248,160,1344,192,1392,208L1440,224L1440,320L0,320Z"></path>
+  </svg>
+</div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#inicio" class="brand">Sakata<span class="brand-dot">.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#inicio" class="nav-link" data-page="inicio">Início</a>
+      <a href="#servicos" class="nav-link" data-page="servicos">Serviços</a>
+      <a href="#resumo" class="nav-link" data-page="resumo">Resumo</a>
+      <a href="#projetos" class="nav-link" data-page="projetos">Projetos</a>
+      <a href="#contato" class="nav-link" data-page="contato">Contato</a>
+    </nav>
+    <div style="display:flex; align-items:center; gap:12px;">
+      <a href="#contato" class="nav-cta" data-page="contato">Fale comigo</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= INÍCIO ================= -->
+  <section class="page is-active" id="page-inicio">
+    <div class="wrap">
+      <div class="hero">
+        <div>
+          <span class="eyebrow">// backend jr — java · spring boot · sql</span>
+          <h1 class="hero-heading">Olá, eu sou<br><span class="hero-name">Diego Sakata</span></h1>
+          <p class="hero-copy">
+            Estudante de Tecnologia em Análise e Desenvolvimento de Sistemas (Fatec Ipiranga) e estagiário de TI,
+            com experiência prática em Java, Spring Boot e bancos de dados relacionais. Construo APIs REST completas
+            — do modelo de dados à documentação — e estou aprofundando AWS e React.js para atuar em times de
+            engenharia backend.
+          </p>
+          <div class="hero-actions">
+            <a href="assets/files/CV-Diego-Sakata.pdf" class="btn-primary" download>
+              Baixar currículo
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
+            </a>
+            <a href="https://github.com/DiegoLopesSakata" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.26 9.28 7.77 10.78.57.1.78-.25.78-.55v-2.14c-3.16.69-3.83-1.34-3.83-1.34-.52-1.32-1.26-1.68-1.26-1.68-1.03-.71.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.02 1.74 2.67 1.24 3.32.95.1-.74.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.5-1.46.11-3.04 0 0 .96-.31 3.14 1.16a10.9 10.9 0 0 1 5.72 0c2.18-1.47 3.14-1.16 3.14-1.16.61 1.58.23 2.75.11 3.04.73.79 1.17 1.8 1.17 3.04 0 4.35-2.66 5.31-5.19 5.59.41.35.77 1.04.77 2.1v3.11c0 .3.21.66.79.55 4.5-1.5 7.76-5.77 7.76-10.78C23.02 5.24 18.27.5 12 .5Z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/diego-lopes-sakata" target="_blank" rel="noopener" class="icon-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.75h4V23h-4V8.75zM8.5 8.75h3.83v1.95h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1V23h-4v-6.5c0-1.55-.03-3.55-2.17-3.55-2.17 0-2.5 1.7-2.5 3.44V23h-4V8.75z"/></svg>
+            </a>
+            <a href="https://wa.me/5511997472010" target="_blank" rel="noopener" class="icon-btn" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A7.85 7.85 0 0 0 12.05 4C7.6 4 4 7.6 4 12.05c0 1.42.37 2.8 1.08 4.02L4 21l5.07-1.05a8.03 8.03 0 0 0 3 .58h.01c4.45 0 8.05-3.6 8.05-8.05 0-2.15-.84-4.17-2.53-5.66zm-5.55 12.4h-.01a6.67 6.67 0 0 1-3.4-.93l-.24-.14-2.53.53.53-2.47-.16-.25a6.6 6.6 0 0 1-1.02-3.53c0-3.66 2.98-6.64 6.65-6.64a6.6 6.6 0 0 1 4.7 1.95 6.58 6.58 0 0 1 1.94 4.69c0 3.67-2.98 6.79-6.46 6.79zm3.65-4.94c-.2-.1-1.17-.58-1.35-.64-.18-.07-.32-.1-.45.1-.13.2-.51.64-.63.77-.11.13-.23.15-.43.05-.2-.1-.83-.31-1.58-.98-.58-.52-.98-1.16-1.09-1.36-.11-.2-.01-.31.09-.4.09-.1.2-.24.3-.36.1-.12.13-.2.2-.34.07-.13.03-.25-.02-.35-.05-.1-.45-1.08-.61-1.48-.16-.39-.33-.34-.45-.34-.11 0-.25-.01-.38-.01a.74.74 0 0 0-.54.25c-.18.2-.71.7-.71 1.7s.73 1.98.83 2.11c.1.13 1.44 2.2 3.49 3.08.49.21.87.34 1.17.43.49.16.94.13 1.29.08.4-.06 1.17-.48 1.33-.94.16-.46.16-.85.11-.94-.05-.09-.18-.14-.38-.24z"/></svg>
+            </a>
+            <a href="mailto:dihsakata@gmail.com" class="icon-btn" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" stroke-linejoin="round"/><path d="M4 6l8 7 8-7" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat"><span class="stat-num">2</span><span class="stat-label">Estágios em TI</span></div>
+            <div class="stat"><span class="stat-num">5</span><span class="stat-label">Projetos desenvolvidos</span></div>
+            <div class="stat"><span class="stat-num">12</span><span class="stat-label">Certificações</span></div>
+            <div class="stat"><span class="stat-num">15+</span><span class="stat-label">Tecnologias</span></div>
+          </div>
+        </div>
+
+        <div class="hero-graphic" aria-hidden="true">
+          <svg viewBox="0 0 400 400">
+            <line class="edge flow" x1="200" y1="200" x2="90" y2="110"/>
+            <line class="edge flow" x1="200" y1="200" x2="310" y2="100"/>
+            <line class="edge flow" x1="200" y1="200" x2="80" y2="290"/>
+            <line class="edge flow" x1="200" y1="200" x2="320" y2="300"/>
+            <line class="edge flow" x1="200" y1="200" x2="200" y2="60"/>
+            <line class="edge flow" x1="200" y1="200" x2="200" y2="340"/>
+            <circle class="node node-core pulse" cx="200" cy="200" r="26"/>
+            <circle class="node pulse pulse-d1" cx="90" cy="110" r="16"/>
+            <circle class="node pulse pulse-d2" cx="310" cy="100" r="14"/>
+            <circle class="node pulse pulse-d3" cx="80" cy="290" r="15"/>
+            <circle class="node pulse pulse-d1" cx="320" cy="300" r="17"/>
+            <circle class="node pulse pulse-d2" cx="200" cy="60" r="12"/>
+            <circle class="node pulse pulse-d3" cx="200" cy="340" r="13"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVIÇOS ================= -->
+  <section class="page" id="page-servicos">
+    <div class="wrap section">
+      <span class="eyebrow">// competências &amp; serviços</span>
+      <h2 class="section-title">Frentes de atuação</h2>
+      <p class="section-lede">Da modelagem do banco até a API no ar: essas são as áreas onde entrego mais valor hoje.</p>
+
+      <div class="services-grid">
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><circle cx="7" cy="7" r=".6" fill="currentColor"/><circle cx="7" cy="17" r=".6" fill="currentColor"/></svg>
+          </div>
+          <h3>Backend &amp; APIs REST</h3>
+          <p>Modelagem, autenticação e endpoints RESTful documentados com Swagger/OpenAPI, prontos para integração com times de frontend e mobile.</p>
+          <div class="tag-row"><span>Java</span><span>Spring Boot</span><span>.NET 8</span><span>Node.js</span></div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <h3>Desenvolvimento Web &amp; Interfaces</h3>
+          <p>Interfaces responsivas com React.js e JavaScript, consumindo APIs REST com foco em performance e acessibilidade.</p>
+          <div class="tag-row"><span>React</span><span>JavaScript</span><span>Axios</span><span>Vite</span></div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"/></svg>
+          </div>
+          <h3>Banco de Dados &amp; Modelagem</h3>
+          <p>Modelagem relacional, queries otimizadas e persistência de dados, com atenção a governança e conformidade com a LGPD.</p>
+          <div class="tag-row"><span>SQL Server</span><span>MySQL</span><span>PostgreSQL</span><span>H2</span></div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v6M12 16v6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M2 12h6M16 12h6M4.9 19.1l4.2-4.2M14.9 9.1l4.2-4.2"/></svg>
+          </div>
+          <h3>Landing Pages &amp; Deploy Contínuo</h3>
+          <p>Publicação de páginas e projetos com versionamento no GitHub e deploy contínuo na Vercel, do commit ao ar em minutos.</p>
+          <div class="tag-row"><span>GitHub</span><span>Vercel</span><span>CI/CD</span></div>
+        </div>
+      </div>
+
+      <div class="services-cta">
+        <a href="#contato" class="btn-primary nav-link" data-page="contato">Vamos conversar sobre uma vaga</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RESUMO ================= -->
+  <section class="page" id="page-resumo">
+    <div class="wrap section">
+      <div class="resume-layout">
+        <div class="tab-list" role="tablist">
+          <button class="tab-btn is-active" data-tab="experiencia">Experiência</button>
+          <button class="tab-btn" data-tab="formacao">Formação</button>
+          <button class="tab-btn" data-tab="certificados">Certificados</button>
+          <button class="tab-btn" data-tab="habilidades">Habilidades</button>
+          <button class="tab-btn" data-tab="sobre">Sobre mim</button>
+        </div>
+
+        <div class="tab-content">
+
+          <div class="tab-panel is-active" id="tab-experiencia">
+            <h2 class="section-title">Histórico profissional</h2>
+            <p class="section-lede" style="margin-bottom:36px;">Experiência prática como estagiário de TI, apoiando times de desenvolvimento e infraestrutura.</p>
+
+            <div class="timeline-item">
+              <span class="timeline-date">Abr 2026 – Presente · São Paulo, SP</span>
+              <h3 class="timeline-title">Estagiário de TI, Projetos</h3>
+              <div class="timeline-org">Invenzi</div>
+              <ul class="timeline-body">
+                <li>Configuração e implantação de sistemas para clientes de controle de acesso, validando fluxos de dados do ADO, revisando logs do Apache e validando queries SQL.</li>
+                <li>Correções de bugs em colaboração com a equipe de desenvolvimento, usando práticas de integração contínua para garantir lançamentos estáveis.</li>
+                <li>Scripts em Python para endpoints personalizados e queries em SQL Server para atender regras de negócio dos clientes.</li>
+              </ul>
+            </div>
+
+            <div class="timeline-item">
+              <span class="timeline-date">Set 2025 – Abr 2026 · São Paulo, SP</span>
+              <h3 class="timeline-title">Estagiário de TI</h3>
+              <div class="timeline-org">SABESP</div>
+              <ul class="timeline-body">
+                <li>Construção de um fluxo de automação com Power Automate, Outlook e Monday.com, reduzindo prazos perdidos em 15%.</li>
+                <li>Criação de relatórios gerenciais e dashboards para monitorar processos internos e agilizar a tomada de decisão.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="tab-formacao">
+            <h2 class="section-title">Formação acadêmica</h2>
+            <p class="section-lede" style="margin-bottom:36px;">Trajetória em Análise e Desenvolvimento de Sistemas.</p>
+
+            <div class="timeline-item">
+              <span class="timeline-date">Fev 2024 – Dez 2026 (previsto)<span class="badge">Cursando</span></span>
+              <h3 class="timeline-title">Tecnólogo em Análise e Desenvolvimento de Sistemas</h3>
+              <div class="timeline-org">Faculdade de Tecnologia do Ipiranga (Fatec Ipiranga) — São Paulo, SP</div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="tab-certificados">
+            <h2 class="section-title">Certificações &amp; cursos</h2>
+            <p class="section-lede" style="margin-bottom:36px;">Cursos complementares em nuvem, dados, gestão ágil e ferramentas de desenvolvimento.</p>
+
+            <div class="timeline-item">
+              <span class="timeline-date">Set 2026</span>
+              <h3 class="timeline-title">Gerenciar seu trabalho com projetos do GitHub</h3>
+              <div class="timeline-org">Microsoft</div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-date">Set 2026</span>
+              <h3 class="timeline-title">Planejar o Agile com projetos do GitHub e o Azure Boards</h3>
+              <div class="timeline-org">Microsoft</div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-date">Ago 2026</span>
+              <h3 class="timeline-title">Fundamentals of Predictive Project Management</h3>
+              <div class="timeline-org">Project Management Institute</div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-date">Ago 2026</span>
+              <h3 class="timeline-title">Fundamentals of Agile Project Management</h3>
+              <div class="timeline-org">Project Management Institute</div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-date">Jul 2025</span>
+              <h3 class="timeline-title">SQL (Intermediate) Certificate</h3>
+              <div class="timeline-org">HackerRank</div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-date">Jul 2025</span>
+              <h3 class="timeline-title">SQL (Basic) Certificate</h3>
+              <div class="timeline-org">HackerRank</div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-date">Mai 2025</span>
+              <h3 class="timeline-title">Problem Solving (Basic) Certificate</h3>
+              <div class="timeline-org">HackerRank</div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-date">Nov 2024</span>
+              <h3 class="timeline-title">Using Computer and Mobile Devices</h3>
+              <div class="timeline-org">Cisco Networking Academy</div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-date">Out 2024</span>
+              <h3 class="timeline-title">Computer Hardware Basics</h3>
+              <div class="timeline-org">Cisco Networking Academy</div>
+            </div>
+            <div class="timeline-item">
+              <h3 class="timeline-title">AWS Academy: Cloud Foundations</h3>
+              <div class="timeline-org">AWS Academy</div>
+            </div>
+            <div class="timeline-item">
+              <h3 class="timeline-title">AWS Academy: Cloud Storage</h3>
+              <div class="timeline-org">AWS Academy</div>
+            </div>
+            <div class="timeline-item">
+              <h3 class="timeline-title">AWS Academy: Generative AI Foundations</h3>
+              <div class="timeline-org">AWS Academy</div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="tab-habilidades">
+            <h2 class="section-title">Habilidades técnicas</h2>
+            <p class="section-lede" style="margin-bottom:32px;">Linguagens, frameworks, bancos de dados e ferramentas do dia a dia.</p>
+
+            <div class="skills-grid">
+              <div class="skill-chip"><img src="https://skillicons.dev/icons?i=java" alt="Java">Java</div>
+              <div class="skill-chip"><img src="https://skillicons.dev/icons?i=spring" alt="Spring Boot">Spring Boot</div>
+              <div class="skill-chip"><img src="https://skillicons.dev/icons?i=cs" alt="C#">C#</div>
+              <div class="skill-chip"><img src="https://skillicons.dev/icons?i=dotnet" alt=".NET">.NET 8</div>
+              <div class="skill-chip"><img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js">Node.js</div>
+              <div class="skill-chip"><img src="https://skillicons.dev/icons?i=python" alt="Python">Python</div>
+              <div class="skill-chip"><img src="https://skillicons.dev/icons?i=js" alt="JavaScript">JavaScript</div>
+              <div class="skill-chip"><img src="https://skillicons.dev/icons?i=react" alt="React">React.js</div>
+              <div class="skill-chip"><img src="https://skillicons.dev/icons?i=vite" alt="Vite">Vite</div>
+              <div class="skill-chip"><img src="https://skillicons.dev/icons?i=mysql" alt="MySQL">MySQL</div>
+              <div class="skill-chip"><img src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL">PostgreSQL</div>
+              <div class="skill-chip"><img src="https://skillicons.dev/icons?i=aws" alt="AWS">AWS</div>
+              <div class="skill-chip"><img src="https://skillicons.dev/icons?i=git" alt="Git">Git</div>
+              <div class="skill-chip"><img src="https://skillicons.dev/icons?i=github" alt="GitHub">GitHub</div>
+              <div class="skill-chip"><img src="https://skillicons.dev/icons?i=html" alt="HTML5">HTML5</div>
+              <div class="skill-chip"><img src="https://skillicons.dev/icons?i=css" alt="CSS3">CSS3</div>
+            </div>
+
+            <div class="subhead">// Interesse em aprofundar</div>
+            <div class="softskills" style="margin-bottom: 36px;">
+              <span class="softskill-tag">TypeScript</span>
+              <span class="softskill-tag">RabbitMQ</span>
+              <span class="softskill-tag">MongoDB / DynamoDB</span>
+              <span class="softskill-tag">Docker</span>
+              <span class="softskill-tag">Kubernetes</span>
+              <span class="softskill-tag">Azure DevOps</span>
+            </div>
+
+            <div class="subhead">// Soft skills</div>
+            <div class="softskills">
+              <span class="softskill-tag">Resolução analítica de problemas</span>
+              <span class="softskill-tag">Comunicação com stakeholders</span>
+              <span class="softskill-tag">Adaptabilidade</span>
+              <span class="softskill-tag">Pair programming</span>
+              <span class="softskill-tag">Proatividade e ownership</span>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="tab-sobre">
+            <h2 class="section-title">Sobre mim</h2>
+            <p class="about-text">
+              Estudante de Tecnologia em Análise e Desenvolvimento de Sistemas (Fatec Ipiranga), com experiência
+              prática como estagiário de TI em ambientes de projetos e infraestrutura. Tenho foco em Java, Spring Boot
+              e APIs REST, com base sólida em bancos relacionais (SQL Server, MySQL, PostgreSQL) e conhecimento
+              inicial de computação em nuvem na AWS. Desenvolvo projetos pessoais e acadêmicos completos — do
+              backend ao frontend — e busco crescer em times de engenharia backend, aplicando boas práticas de
+              integração contínua e comunicação clara com áreas não técnicas.
+            </p>
+
+            <div class="info-grid">
+              <div class="info-row"><div class="info-label">Nome</div><div class="info-value">Diego Lopes Sakata</div></div>
+              <div class="info-row"><div class="info-label">Telefone / WhatsApp</div><div class="info-value">(11) 99747-2010</div></div>
+              <div class="info-row"><div class="info-label">E-mail</div><div class="info-value">dihsakata@gmail.com</div></div>
+              <div class="info-row"><div class="info-label">Localização</div><div class="info-value">São Paulo, SP</div></div>
+              <div class="info-row"><div class="info-label">Formação atual</div><div class="info-value">Fatec Ipiranga (ADS)</div></div>
+              <div class="info-row"><div class="info-label">Objetivo</div><div class="info-value">Estágio ou Júnior — Backend</div></div>
+              <div class="info-row"><div class="info-label">Idiomas</div><div class="info-value">Português (nativo), Inglês B2</div></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJETOS ================= -->
+  <section class="page" id="page-projetos">
+    <div class="wrap section">
+      <span class="eyebrow">// projetos de desenvolvimento</span>
+      <h2 class="section-title">O que já construí</h2>
+      <p class="section-lede">Projetos acadêmicos e pessoais, do backend em Java/Python até interfaces em React.</p>
+
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-top">
+            <h3 class="project-title">🔎 Vestigium — Python + FastAPI</h3>
+            <a href="https://github.com/vinilmt/vestigium" target="_blank" rel="noopener" class="project-link" aria-label="Ver no GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.26 9.28 7.77 10.78.57.1.78-.25.78-.55v-2.14c-3.16.69-3.83-1.34-3.83-1.34-.52-1.32-1.26-1.68-1.26-1.68-1.03-.71.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.02 1.74 2.67 1.24 3.32.95.1-.74.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.5-1.46.11-3.04 0 0 .96-.31 3.14 1.16a10.9 10.9 0 0 1 5.72 0c2.18-1.47 3.14-1.16 3.14-1.16.61 1.58.23 2.75.11 3.04.73.79 1.17 1.8 1.17 3.04 0 4.35-2.66 5.31-5.19 5.59.41.35.77 1.04.77 2.1v3.11c0 .3.21.66.79.55 4.5-1.5 7.76-5.77 7.76-10.78C23.02 5.24 18.27.5 12 .5Z"/></svg>
+            </a>
+          </div>
+          <p class="project-desc">Backend REST para investigação crítica de conteúdo assistida por IA, com autenticação por token, PostgreSQL via psycopg2, hash de senha com bcrypt e Docker Compose para orquestração dos serviços.</p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <h3 class="project-title">🏢 CondoHub — HTML/CSS + Vanilla JS</h3>
+            <a href="https://github.com/DiegoLopesSakata/CondoHUB" target="_blank" rel="noopener" class="project-link" aria-label="Ver no GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.26 9.28 7.77 10.78.57.1.78-.25.78-.55v-2.14c-3.16.69-3.83-1.34-3.83-1.34-.52-1.32-1.26-1.68-1.26-1.68-1.03-.71.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.02 1.74 2.67 1.24 3.32.95.1-.74.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.5-1.46.11-3.04 0 0 .96-.31 3.14 1.16a10.9 10.9 0 0 1 5.72 0c2.18-1.47 3.14-1.16 3.14-1.16.61 1.58.23 2.75.11 3.04.73.79 1.17 1.8 1.17 3.04 0 4.35-2.66 5.31-5.19 5.59.41.35.77 1.04.77 2.1v3.11c0 .3.21.66.79.55 4.5-1.5 7.76-5.77 7.76-10.78C23.02 5.24 18.27.5 12 .5Z"/></svg>
+            </a>
+          </div>
+          <p class="project-desc">SPA multi-perfil para gestão condominial com roteamento via hash, 46 views para 4 perfis de usuário (síndico, morador, porteiro, funcionário), arquitetura modular e modo de acessibilidade para baixa visão.</p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <h3 class="project-title">📦 API REST — Java + Spring Boot</h3>
+            <a href="https://github.com/DiegoLopesSakata/20251_fatec_ipi_POO" target="_blank" rel="noopener" class="project-link" aria-label="Ver no GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.26 9.28 7.77 10.78.57.1.78-.25.78-.55v-2.14c-3.16.69-3.83-1.34-3.83-1.34-.52-1.32-1.26-1.68-1.26-1.68-1.03-.71.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.02 1.74 2.67 1.24 3.32.95.1-.74.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.5-1.46.11-3.04 0 0 .96-.31 3.14 1.16a10.9 10.9 0 0 1 5.72 0c2.18-1.47 3.14-1.16 3.14-1.16.61 1.58.23 2.75.11 3.04.73.79 1.17 1.8 1.17 3.04 0 4.35-2.66 5.31-5.19 5.59.41.35.77 1.04.77 2.1v3.11c0 .3.21.66.79.55 4.5-1.5 7.76-5.77 7.76-10.78C23.02 5.24 18.27.5 12 .5Z"/></svg>
+            </a>
+          </div>
+          <p class="project-desc">CRUD completo com JPA/Hibernate, banco de dados H2 e documentação de endpoints via Swagger/OpenAPI.</p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <h3 class="project-title">🐾 Petshop Web System — Java + MySQL</h3>
+            <a href="https://github.com/DiegoLopesSakata/20252_fatec_ipi_pw" target="_blank" rel="noopener" class="project-link" aria-label="Ver no GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.26 9.28 7.77 10.78.57.1.78-.25.78-.55v-2.14c-3.16.69-3.83-1.34-3.83-1.34-.52-1.32-1.26-1.68-1.26-1.68-1.03-.71.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.02 1.74 2.67 1.24 3.32.95.1-.74.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.5-1.46.11-3.04 0 0 .96-.31 3.14 1.16a10.9 10.9 0 0 1 5.72 0c2.18-1.47 3.14-1.16 3.14-1.16.61 1.58.23 2.75.11 3.04.73.79 1.17 1.8 1.17 3.04 0 4.35-2.66 5.31-5.19 5.59.41.35.77 1.04.77 2.1v3.11c0 .3.21.66.79.55 4.5-1.5 7.76-5.77 7.76-10.78C23.02 5.24 18.27.5 12 .5Z"/></svg>
+            </a>
+          </div>
+          <p class="project-desc">CRUD de backend integrado ao MySQL com um frontend responsivo em HTML/CSS.</p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <h3 class="project-title">🎲 RPG Character Creator — React.js</h3>
+            <a href="https://github.com/DiegoLopesSakata/20251_fatec_ipi_poo_p1_modelo" target="_blank" rel="noopener" class="project-link" aria-label="Ver no GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.26 9.28 7.77 10.78.57.1.78-.25.78-.55v-2.14c-3.16.69-3.83-1.34-3.83-1.34-.52-1.32-1.26-1.68-1.26-1.68-1.03-.71.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.02 1.74 2.67 1.24 3.32.95.1-.74.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.5-1.46.11-3.04 0 0 .96-.31 3.14 1.16a10.9 10.9 0 0 1 5.72 0c2.18-1.47 3.14-1.16 3.14-1.16.61 1.58.23 2.75.11 3.04.73.79 1.17 1.8 1.17 3.04 0 4.35-2.66 5.31-5.19 5.59.41.35.77 1.04.77 2.1v3.11c0 .3.21.66.79.55 4.5-1.5 7.76-5.77 7.76-10.78C23.02 5.24 18.27.5 12 .5Z"/></svg>
+            </a>
+          </div>
+          <p class="project-desc">Componentização com Props, barra de progresso de nível dinâmica e ícones por classe.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTATO ================= -->
+  <section class="page" id="page-contato">
+    <div class="wrap section">
+      <span class="eyebrow">// vamos conversar</span>
+      <h2 class="section-title">Vamos trabalhar juntos</h2>
+      <p class="section-lede">Preencha o formulário ou fale direto por WhatsApp/e-mail. Retorno o mais breve possível.</p>
+
+      <div class="contact-layout">
+        <form id="contactForm">
+          <div class="field-row">
+            <input class="field" type="text" placeholder="Nome" required>
+            <input class="field" type="text" placeholder="Sobrenome">
+          </div>
+          <div class="field-row">
+            <input class="field" type="email" placeholder="E-mail" required>
+            <input class="field" type="text" placeholder="Assunto">
+          </div>
+          <textarea class="field" placeholder="Escreva sua mensagem aqui..." required></textarea>
+          <button type="submit" class="btn-primary">Enviar mensagem</button>
+        </form>
+
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A7.85 7.85 0 0 0 12.05 4C7.6 4 4 7.6 4 12.05c0 1.42.37 2.8 1.08 4.02L4 21l5.07-1.05a8.03 8.03 0 0 0 3 .58h.01c4.45 0 8.05-3.6 8.05-8.05 0-2.15-.84-4.17-2.53-5.66z"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Telefone / WhatsApp</div>
+              <div class="contact-info-value">(11) 99747-2010</div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" stroke-linejoin="round"/><path d="M4 6l8 7 8-7" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">E-mail</div>
+              <div class="contact-info-value">dihsakata@gmail.com</div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.1-7-11a7 7 0 1 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Localização</div>
+              <div class="contact-info-value">São Paulo, SP — Brasil</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">Diego Lopes Sakata · São Paulo, SP · feito com Java na cabeça e roxo no coração.</div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
