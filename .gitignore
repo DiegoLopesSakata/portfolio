@@ -1,0 +1,16 @@
+# Claude Code
+.claude/
+CLAUDE.md
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores / IDEs
+.vscode/
+.idea/
+
+# Variáveis de ambiente
+.env
+.env.local
